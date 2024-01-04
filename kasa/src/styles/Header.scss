@@ -1,0 +1,23 @@
+@import "./index.scss";
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 7em;
+
+  & img {
+    width: 210px;
+  }
+
+  & nav a {
+    margin-left: 2.5em;
+    font-size: 24px;
+    color: $coral-red-color;
+    text-decoration: none;
+    &.link-active {
+      text-decoration: underline;
+    }
+  }
+}

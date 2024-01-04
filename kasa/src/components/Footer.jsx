@@ -1,4 +1,5 @@
 import whiteLogo from "../assets/whiteLogoKasa.png";
+import "../styles/Footer.css";
 
 function Footer() {
   return (

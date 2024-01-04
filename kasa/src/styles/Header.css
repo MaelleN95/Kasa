@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@400;700&family=Raleway:wght@400;700&family=Roboto:wght@100&display=swap");
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 7em;
+}
+header img {
+  width: 210px;
+}
+header nav a {
+  margin-left: 2.5em;
+  font-size: 24px;
+  color: #ff6060;
+  text-decoration: none;
+}
+header nav a.link-active {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=Header.css.map */

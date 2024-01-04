@@ -1,7 +1,14 @@
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Banner from "../components/Banner";
+
 function About() {
   return (
     <div>
-      <h1>A propos</h1>
+      <Header />
+      <Banner />
+      <h1> A Propos</h1>
+      <Footer />
     </div>
   );
 }
