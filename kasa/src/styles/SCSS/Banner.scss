@@ -1,14 +1,18 @@
-$bg-banner-home: url("../assets/homeBanner.png");
-$bg-banner-about: url("../assets/aboutBanner.png");
+@import "./index.scss";
+
+$bg-banner-home: url("../../assets/homeBanner.png");
+$bg-banner-about: url("../../assets/aboutBanner.png");
 $height-banner: 25vh;
 
+@mixin bg-settings {
+  background-position: 40%;
+  background-size: cover;
+}
+
 .banner {
-  margin: 0 7em;
+  margin: 0 $margin-page;
   height: $height-banner;
   border-radius: 25px;
-  background: $bg-banner-home;
-  background-size: cover;
-  background-position: 40%;
   position: relative;
   z-index: -1;
 
@@ -34,4 +38,14 @@ $height-banner: 25vh;
     color: white;
     font-size: 48px;
   }
+}
+
+.homeBanner {
+  background: $bg-banner-home;
+  @include bg-settings;
+}
+
+.aboutBanner {
+  background: $bg-banner-about;
+  @include bg-settings;
 }

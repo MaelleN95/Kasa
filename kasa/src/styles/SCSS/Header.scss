@@ -5,7 +5,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 2em 7em;
+  margin: 2em $margin-page;
 
   & img {
     width: 210px;
