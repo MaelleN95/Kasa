@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../SCSS/index.scss","../SCSS/Error404.scss"],"names":[],"mappings":"AAAQ;AAMR;EACE;EACA;EACA;;;ACPF;EACE;EACA;EACA;EACA;EACA,ODLgB;ECMhB;;AACA;EACE;EACA;EACA;;AAEF;EACE;;AAEF;EACE;EACA,ODjBc;ECkBd","file":"Error404.css"}
+{"version":3,"sourceRoot":"","sources":["../SCSS/index.scss","../SCSS/Error404.scss"],"names":[],"mappings":"AAAQ;AAcR;EACE;EACA;EACA;;;ACfF;EACE;EACA;EACA;EACA;EACA,ODLgB;ECMhB;;AACA;EACE;EACA;EACA;;AAEF;EACE;;AAEF;EACE;EACA,ODjBc;ECkBd","file":"Error404.css"}

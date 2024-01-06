@@ -1,8 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@400;700&family=Raleway:wght@400;700&family=Roboto:wght@100&display=swap");
-
+//Colors
 $coral-red-color: #ff6060;
 
+//Margin
 $margin-page: 7em;
+$margin-page-mobil: 1.3em;
+
+//breakpoints
+$desktop: 1419px;
+$big-tablet: 1100px;
+$tablet: 917px;
+$mobil: 719px;
 
 body {
   margin: 0;

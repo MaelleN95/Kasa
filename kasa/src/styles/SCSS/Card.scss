@@ -1,8 +1,26 @@
 @import "./index.scss";
 
-@mixin card-size {
+@mixin card-size-desktop {
   width: 340px;
   height: 340px;
+  border-radius: 10px;
+}
+
+@mixin card-size-big-tablet {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+@mixin card-size-tablet {
+  width: 42vw;
+  height: 255px;
+  border-radius: 10px;
+}
+
+@mixin card-size-mobil {
+  width: 100%;
+  height: 255px;
   border-radius: 10px;
 }
 
@@ -13,18 +31,46 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   background-color: #f6f6f6;
   border-radius: 25px;
+  @media (max-width: $desktop) {
+    justify-content: space-around;
+    padding: 0.7em;
+  }
+  @media (max-width: $tablet) {
+    margin: 2.2em $margin-page-mobil;
+  }
 }
 
 .location-card {
   margin: 1.5em;
   position: relative;
-  @include card-size;
+  @include card-size-desktop;
+
+  @media (max-width: $desktop) {
+    @include card-size-big-tablet;
+    margin: 0.8em;
+  }
+  @media (max-width: $tablet) {
+    @include card-size-tablet;
+  }
+  @media (max-width: $mobil) {
+    @include card-size-mobil;
+  }
 
   &__cover {
     object-fit: cover;
-    @include card-size;
+    @include card-size-desktop;
+    @media (max-width: $desktop) {
+      @include card-size-big-tablet;
+    }
+    @media (max-width: $tablet) {
+      @include card-size-tablet;
+    }
+    @media (max-width: $mobil) {
+      @include card-size-mobil;
+    }
   }
 
   & h2 {
@@ -40,10 +86,10 @@
   }
 
   &__gradient-effect {
-    @include card-size;
+    @include card-size-desktop;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0) 0%,
@@ -52,8 +98,19 @@
     );
     opacity: 0.3;
     transition: opacity 300ms;
+
     &:hover {
       opacity: 0.9;
+    }
+
+    @media (max-width: $desktop) {
+      @include card-size-big-tablet;
+    }
+    @media (max-width: $tablet) {
+      @include card-size-tablet;
+    }
+    @media (max-width: $mobil) {
+      @include card-size-mobil;
     }
   }
 }

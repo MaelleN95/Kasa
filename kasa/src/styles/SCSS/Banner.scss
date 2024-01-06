@@ -2,7 +2,9 @@
 
 $bg-banner-home: url("../../assets/homeBanner.png");
 $bg-banner-about: url("../../assets/aboutBanner.png");
-$height-banner: 25vh;
+$height-banner-desktop: 25vh;
+$height-banner-tablet: 20vh;
+$height-banner-mobil: 15vh;
 
 @mixin bg-settings {
   background-position: 40%;
@@ -11,10 +13,17 @@ $height-banner: 25vh;
 
 .banner {
   margin: 0 $margin-page;
-  height: $height-banner;
+  height: $height-banner-desktop;
   border-radius: 25px;
   position: relative;
   z-index: -1;
+  @media (max-width: $tablet) {
+    height: $height-banner-tablet;
+    margin: 0 $margin-page-mobil;
+  }
+  @media (max-width: $mobil) {
+    height: $height-banner-mobil;
+  }
 
   &::before {
     content: "";
@@ -33,10 +42,21 @@ $height-banner: 25vh;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: $height-banner;
+    height: $height-banner-desktop;
     z-index: 0;
     color: white;
     font-size: 48px;
+
+    @media (max-width: $tablet) {
+      height: $height-banner-tablet;
+      font-size: 40px;
+    }
+    @media (max-width: $mobil) {
+      height: $height-banner-mobil;
+      font-size: 24px;
+      justify-content: flex-start;
+      padding-left: 1em;
+    }
   }
 }
 

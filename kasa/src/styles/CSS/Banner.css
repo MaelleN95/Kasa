@@ -12,6 +12,17 @@ body {
   position: relative;
   z-index: -1;
 }
+@media (max-width: 917px) {
+  .banner {
+    height: 20vh;
+    margin: 0 1.3em;
+  }
+}
+@media (max-width: 719px) {
+  .banner {
+    height: 15vh;
+  }
+}
 .banner::before {
   content: "";
   position: absolute;
@@ -32,6 +43,20 @@ body {
   z-index: 0;
   color: white;
   font-size: 48px;
+}
+@media (max-width: 917px) {
+  .banner__slogan {
+    height: 20vh;
+    font-size: 40px;
+  }
+}
+@media (max-width: 719px) {
+  .banner__slogan {
+    height: 15vh;
+    font-size: 24px;
+    justify-content: flex-start;
+    padding-left: 1em;
+  }
 }
 
 .homeBanner {
