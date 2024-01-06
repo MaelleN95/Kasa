@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@400;700&family=Raleway:wght@400;700&family=Roboto:wght@100&display=swap");
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.star {
+  height: 25px;
+  width: 25px;
+}
+.star__neutral-star {
+  color: #e3e3e3;
+}
+.star__color-star {
+  color: #ff6060;
+}
+
+.loc-presentation {
+  margin: 1em 7em;
+}
+@media (max-width: 917px) {
+  .loc-presentation {
+    margin: 0 1.3em;
+  }
+}
+.loc-presentation__cover {
+  object-fit: cover;
+  border-radius: 25px;
+  height: 23vw;
+  width: 100%;
+  margin: 1em 0;
+}
+.loc-presentation__info {
+  margin: 0.5em 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #ff6060;
+}
+.loc-presentation__info h2 {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0;
+}
+.loc-presentation__info p {
+  font-size: 18px;
+  margin: 0.6em 0;
+}
+.loc-presentation__info__tags {
+  list-style: none;
+  margin: 1.3em 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.loc-presentation__info__tags li {
+  color: white;
+  background-color: #ff6060;
+  border-radius: 10px;
+  margin-right: 1em;
+  padding: 0.3em 1em;
+  min-width: 6em;
+  text-align: center;
+}
+.loc-presentation__info__details {
+  display: flex;
+  flex-direction: column;
+}
+.loc-presentation__info__details__host {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+.loc-presentation__info__details__host img {
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+}
+.loc-presentation__info__details__host span {
+  font-size: 18px;
+  padding: 1em 1em 1em 0;
+}
+.loc-presentation__info__details__note {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.3em 0 1.3em 1em;
+}
+
+.collapses {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=LocPresentation.css.map */

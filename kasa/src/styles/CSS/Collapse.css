@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@400;700&family=Raleway:wght@400;700&family=Roboto:wght@100&display=swap");
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.collapse {
+  width: 49%;
+}
+.collapse__close {
+  cursor: pointer;
+  background-color: #ff6060;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+.collapse__close h3 {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 1em;
+}
+.collapse__close img {
+  width: 32px;
+  height: 32px;
+  padding: 0 1em;
+}
+.collapse__open {
+  background-color: #f6f6f6;
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 1.7em 1.3em;
+  line-height: 30px;
+  border-radius: 5px 5px 10px 10px;
+}
+.collapse__open ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/*# sourceMappingURL=Collapse.css.map */

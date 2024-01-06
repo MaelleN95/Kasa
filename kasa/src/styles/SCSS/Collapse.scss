@@ -1,0 +1,48 @@
+@import "./index.scss";
+
+@mixin arrow-size {
+  width: 32px;
+  height: 32px;
+}
+
+@mixin padding-collapse-close {
+  padding: 0 1em;
+}
+
+.collapse {
+  width: 49%;
+  &__close {
+    cursor: pointer;
+    background-color: $coral-red-color;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    & h3 {
+      font-size: 18px;
+      font-weight: 500;
+      @include padding-collapse-close;
+    }
+    & img {
+      @include arrow-size;
+      @include padding-collapse-close;
+    }
+  }
+  &__open {
+    background-color: $light-coral-red-color;
+    color: $coral-red-color;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 1.7em 1.3em;
+    line-height: 30px;
+    border-radius: 5px 5px 10px 10px;
+
+    & ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+  }
+}
