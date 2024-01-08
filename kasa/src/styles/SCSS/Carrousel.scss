@@ -1,39 +1,87 @@
 @import "./index.scss";
 
+// Arrows
+$size-arrow-big-desktop: 80px;
+$size-arrow-desktop: 70px;
+$size-arrow-big-tablet: 60px;
+$size-arrow-tablet: 50px;
+$size-arrow-mobil: 40px;
+
+@mixin size-arrow-big-desktop {
+  width: $size-arrow-big-desktop;
+  height: $size-arrow-big-desktop;
+}
+@mixin size-arrow-desktop {
+  width: $size-arrow-desktop;
+  height: $size-arrow-desktop;
+}
+@mixin size-arrow-big-tablet {
+  width: $size-arrow-big-tablet;
+  height: $size-arrow-big-tablet;
+}
+@mixin size-arrow-tablet {
+  width: $size-arrow-tablet;
+  height: $size-arrow-tablet;
+}
+@mixin size-arrow-mobil {
+  width: $size-arrow-mobil;
+  height: $size-arrow-mobil;
+}
+
+@mixin media-queries-arrow {
+  @media (max-width: $desktop) {
+    @include size-arrow-desktop;
+    top: 42%;
+  }
+  @media (max-width: $big-tablet) {
+    @include size-arrow-big-tablet;
+  }
+  @media (max-width: $tablet) {
+    @include size-arrow-tablet;
+  }
+  @media (max-width: $mobil) {
+    @include size-arrow-mobil;
+  }
+}
+
+// Pictures
 @mixin size-loc-picture {
   height: 25vw;
   width: 100%;
 }
-
 @mixin size-loc-picture-big-tablet {
   height: 35vh;
 }
 
 .carrousel {
   position: relative;
+
   &__arrow {
     position: absolute;
     cursor: pointer;
-
+    @include size-arrow-big-desktop;
+    @include media-queries-arrow;
+    top: 44%;
     &--left {
-      top: 45%;
       left: 1%;
       transform: rotate(-90deg);
     }
     &--right {
-      top: 45%;
       right: 1%;
       transform: rotate(90deg);
     }
   }
   &__count {
     position: absolute;
-    bottom: 5%;
+    bottom: 6%;
     width: 100%;
     text-align: center;
     color: white;
     font-size: 18px;
     letter-spacing: 0.15em;
+    @media (max-width: $desktop) {
+      bottom: 10%;
+    }
   }
   &__cover {
     object-fit: cover;
@@ -47,10 +95,4 @@
       border-radius: 10px;
     }
   }
-}
-.test img {
-  object-fit: cover;
-  width: 300px;
-  height: 200px;
-  margin: 1em;
 }

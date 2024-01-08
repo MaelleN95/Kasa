@@ -7,10 +7,10 @@ import arrow from "../assets/arrow.png";
 const locations = require("../datas/logements.json");
 
 function Carrousel() {
-  //Récupération de l'id dans l'url
+  // Récupération de l'id dans l'url
   const { IDlocation } = useParams();
 
-  //trouver la location qui correspond à l'id dans l'url
+  // Trouver la location qui correspond à l'id dans l'url
   const loc = locations.find((location) => location.id === IDlocation);
 
   // Récup le nombre d'images
@@ -61,11 +61,6 @@ function Carrousel() {
       <div className={total === 1 ? "hidden" : "carrousel__count"}>
         {id + 1}/{total}
       </div>
-      {/* <div className="test">
-        {loc.pictures.map((picture) => (
-          <img src={picture} alt=" " key={id + loc.id} />
-        ))}
-      </div> */}
     </div>
   );
 }

@@ -15,25 +15,56 @@ body {
 .carrousel__arrow {
   position: absolute;
   cursor: pointer;
+  width: 80px;
+  height: 80px;
+  top: 44%;
+}
+@media (max-width: 1419px) {
+  .carrousel__arrow {
+    width: 70px;
+    height: 70px;
+    top: 42%;
+  }
+}
+@media (max-width: 1100px) {
+  .carrousel__arrow {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 917px) {
+  .carrousel__arrow {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 719px) {
+  .carrousel__arrow {
+    width: 40px;
+    height: 40px;
+  }
 }
 .carrousel__arrow--left {
-  top: 45%;
   left: 1%;
   transform: rotate(-90deg);
 }
 .carrousel__arrow--right {
-  top: 45%;
   right: 1%;
   transform: rotate(90deg);
 }
 .carrousel__count {
   position: absolute;
-  bottom: 5%;
+  bottom: 6%;
   width: 100%;
   text-align: center;
   color: white;
   font-size: 18px;
   letter-spacing: 0.15em;
+}
+@media (max-width: 1419px) {
+  .carrousel__count {
+    bottom: 10%;
+  }
 }
 .carrousel__cover {
   object-fit: cover;
@@ -51,13 +82,6 @@ body {
   .carrousel__cover {
     border-radius: 10px;
   }
-}
-
-.test img {
-  object-fit: cover;
-  width: 300px;
-  height: 200px;
-  margin: 1em;
 }
 
 /*# sourceMappingURL=Carrousel.css.map */
