@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import Collapse from "./Collapse";
+import Carrousel from "./Carrousel";
 import "../styles/CSS/LocPresentation.css";
 
 //importation FontAwesome
@@ -22,11 +23,7 @@ function LocPresentation() {
 
   return (
     <div className="loc-presentation">
-      <img
-        className="loc-presentation__cover"
-        src={loc.cover}
-        alt={loc.title}
-      />
+      <Carrousel />
 
       <div className="loc-presentation__info">
         <div>
@@ -46,7 +43,11 @@ function LocPresentation() {
         <div className="loc-presentation__info__details">
           <div className="loc-presentation__info__details__host">
             <img src={loc.host.picture} alt={loc.host.name} />
-            <span>{loc.host.name}</span>
+            <span>
+              {loc.host.name.split(" ")[0]}
+              <br />
+              {loc.host.name.split(" ")[1]}
+            </span>
           </div>
           <div className="loc-presentation__info__details__note">
             {/* Affichage de la note de la location */}
@@ -77,7 +78,7 @@ function LocPresentation() {
       <div className="collapses">
         <Collapse title="Description">{loc.description}</Collapse>
 
-        <Collapse title="Equipements">
+        <Collapse title="Equipements" classNameCollapse="collapse__loc">
           <ul>
             {loc.equipments.map((equipment) => (
               <li key={equipment} className="equipment">

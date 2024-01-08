@@ -1,6 +1,5 @@
 import { useState } from "react";
-import arrowUp from "../assets/arrowUp.png";
-import arrowDown from "../assets/arrowDown.png";
+import arrow from "../assets/arrow.png";
 import "../styles/CSS/Collapse.css";
 
 function Collapse(props) {
@@ -10,18 +9,38 @@ function Collapse(props) {
     updateOpen(!open);
   };
 
-  return (
-    <div className="collapse">
-      <div className="collapse__close" onClick={toggleOpen}>
-        <h3>{props.title}</h3>
-        {open ? (
-          <img src={arrowUp} alt="arrow up" />
-        ) : (
-          <img src={arrowDown} alt="arrow down" />
-        )}
-      </div>
+  const path = window.location.pathname;
 
-      {open && <div className="collapse__open">{props.children}</div>}
+  return (
+    <div
+      className={path === "/about" ? "collapse collapse__about" : "collapse"}
+    >
+      <div
+        className={
+          open ? "collapse__close collapse__close--clicked" : "collapse__close"
+        }
+        onClick={toggleOpen}
+      >
+        <h3>{props.title}</h3>
+        <img
+          src={arrow}
+          alt="arrow"
+          className={
+            open
+              ? "collapse__close__arrow collapse__close__arrow--close"
+              : "collapse__close__arrow collapse__close__arrow--open"
+          }
+        />
+      </div>
+      <div
+        className={
+          open
+            ? "collapse__txt collapse__txt--open"
+            : "collapse__txt collapse__txt--hidden"
+        }
+      >
+        {props.children}
+      </div>
     </div>
   );
 }

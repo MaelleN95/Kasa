@@ -5,6 +5,10 @@ body {
   font-weight: 500;
 }
 
+.hidden {
+  display: none;
+}
+
 .locations {
   margin: 2.5em 7em;
   list-style: none;

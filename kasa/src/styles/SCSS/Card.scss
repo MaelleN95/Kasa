@@ -1,6 +1,6 @@
 @import "./index.scss";
 
-@mixin card-size-desktop {
+@mixin card-size-big-desktop {
   width: 340px;
   height: 340px;
   border-radius: 10px;
@@ -46,7 +46,7 @@
 .location-card {
   margin: 1.5em;
   position: relative;
-  @include card-size-desktop;
+  @include card-size-big-desktop;
 
   @media (max-width: $desktop) {
     @include card-size-big-tablet;
@@ -61,7 +61,7 @@
 
   &__cover {
     object-fit: cover;
-    @include card-size-desktop;
+    @include card-size-big-desktop;
     @media (max-width: $desktop) {
       @include card-size-big-tablet;
     }
@@ -86,7 +86,7 @@
   }
 
   &__gradient-effect {
-    @include card-size-desktop;
+    @include card-size-big-desktop;
     position: absolute;
     top: 0;
     left: 0;

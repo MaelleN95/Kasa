@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@400;700&family=Raleway:wght@400;700&family=Roboto:wght@100&display=swap");
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.hidden {
+  display: none;
+}
+
+.carrousel {
+  position: relative;
+}
+.carrousel__arrow {
+  position: absolute;
+  cursor: pointer;
+}
+.carrousel__arrow--left {
+  top: 45%;
+  left: 1%;
+  transform: rotate(-90deg);
+}
+.carrousel__arrow--right {
+  top: 45%;
+  right: 1%;
+  transform: rotate(90deg);
+}
+.carrousel__count {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 0.15em;
+}
+.carrousel__cover {
+  object-fit: cover;
+  border-radius: 25px;
+  height: 25vw;
+  width: 100%;
+  margin: 1em 0;
+}
+@media (max-width: 1100px) {
+  .carrousel__cover {
+    height: 35vh;
+  }
+}
+@media (max-width: 719px) {
+  .carrousel__cover {
+    border-radius: 10px;
+  }
+}
+
+.test img {
+  object-fit: cover;
+  width: 300px;
+  height: 200px;
+  margin: 1em;
+}
+
+/*# sourceMappingURL=Carrousel.css.map */

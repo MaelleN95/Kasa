@@ -1,0 +1,14 @@
+@import "./index.scss";
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em $margin-page;
+  @media (max-width: $tablet) {
+    margin: 2em $margin-page-mobil;
+  }
+  @media (max-width: $mobil) {
+    margin: 2em $margin-page-mobil;
+  }
+}

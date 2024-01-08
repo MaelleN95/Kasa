@@ -5,6 +5,10 @@ body {
   font-weight: 500;
 }
 
+.hidden {
+  display: none;
+}
+
 .banner {
   margin: 0 7em;
   height: 25vh;
@@ -43,6 +47,19 @@ body {
   z-index: 0;
   color: white;
   font-size: 48px;
+}
+.banner__slogan .mobile-break {
+  display: none;
+}
+@media (max-width: 719px) {
+  .banner__slogan .mobile-break {
+    display: inline;
+  }
+}
+@media (max-width: 1100px) {
+  .banner__slogan {
+    font-size: 43px;
+  }
 }
 @media (max-width: 917px) {
   .banner__slogan {

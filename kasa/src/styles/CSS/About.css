@@ -1,19 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@400;700&family=Raleway:wght@400;700&family=Roboto:wght@100&display=swap");
-
-//Colors
-$coral-red-color: #ff6060;
-$light-coral-red-color: #f6f6f6;
-
-//Margin
-$margin-page: 7em;
-$margin-page-mobil: 1.3em;
-
-//breakpoints
-$desktop: 1419px;
-$big-tablet: 1100px;
-$tablet: 917px;
-$mobil: 719px;
-
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -23,3 +8,22 @@ body {
 .hidden {
   display: none;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 7em;
+}
+@media (max-width: 917px) {
+  main {
+    margin: 2em 1.3em;
+  }
+}
+@media (max-width: 719px) {
+  main {
+    margin: 2em 1.3em;
+  }
+}
+
+/*# sourceMappingURL=About.css.map */

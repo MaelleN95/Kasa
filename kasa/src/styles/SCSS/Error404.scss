@@ -7,17 +7,41 @@
   width: 100%;
   color: $coral-red-color;
   font-size: 36px;
+  text-align: center;
+  @media (max-width: $big-tablet) {
+    font-size: 30px;
+  }
+  @media (max-width: $mobil) {
+    font-size: 18px;
+  }
   &__number-error {
     font-size: 288px;
     font-weight: 700;
     min-height: 50%;
+    @media (max-width: $big-tablet) {
+      font-size: 250px;
+    }
+    @media (max-width: $tablet) {
+      font-size: 180px;
+    }
+    @media (max-width: $mobil) {
+      font-size: 96px;
+      margin: 7vh 0;
+    }
   }
   p {
     margin: 0.9em;
+    @media (max-width: $mobil) {
+      margin: 9vh 0.9em;
+    }
   }
   a {
     font-size: 18px;
     color: $coral-red-color;
     margin: 3.5em 0 5.5em 0;
+    @media (max-width: $mobil) {
+      font-size: 14px;
+      margin: 5vh 0 9vh 0;
+    }
   }
 }

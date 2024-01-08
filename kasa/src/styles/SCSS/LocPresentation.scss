@@ -1,19 +1,25 @@
 @import "./index.scss";
 
-@mixin size-loc-picture {
-  height: 23vw;
-  width: 100%;
-}
-
 @mixin size-rating-star {
   height: 25px;
   width: 25px;
 }
 
+@mixin size-rating-star-mobil {
+  height: 17px;
+  width: 17px;
+}
+
 $size-host-picture: 79px;
+$size-host-picture-tablet: 57px;
+$size-host-picture-mobil: 42px;
 
 .star {
   @include size-rating-star;
+  padding: 2px;
+  @media (max-width: $mobil) {
+    @include size-rating-star-mobil;
+  }
   &__neutral-star {
     color: #e3e3e3;
   }
@@ -29,65 +35,106 @@ $size-host-picture: 79px;
     margin: 0 $margin-page-mobil;
   }
 
-  &__cover {
-    object-fit: cover;
-    border-radius: 25px;
-    @include size-loc-picture;
-    margin: 1em 0;
-  }
-
   &__info {
     margin: 0.5em 0 0 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     color: $coral-red-color;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
+
     & h2 {
       font-size: 36px;
       font-weight: 500;
       margin: 0;
+      padding-right: 2em;
+      @media (max-width: $big-tablet) {
+        font-size: 30px;
+      }
+      @media (max-width: $tablet) {
+        padding-right: 0;
+      }
+      @media (max-width: $mobil) {
+        font-size: 18px;
+      }
     }
     & p {
       font-size: 18px;
       margin: 0.6em 0;
+      @media (max-width: $mobil) {
+        font-size: 14px;
+      }
     }
 
     &__tags {
       list-style: none;
-      margin: 1.3em 0;
+      margin: 0 0;
       padding: 0;
       display: flex;
       flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      @media (max-width: $mobil) {
+        margin: 0.6em 0;
+      }
       & li {
         color: white;
         background-color: $coral-red-color;
         border-radius: 10px;
         margin-right: 1em;
+        margin-bottom: 1em;
         padding: 0.3em 1em;
-        min-width: 6em;
+        min-width: 7.5em;
         text-align: center;
+        font-size: 14px;
+        @media (max-width: $mobil) {
+          font-size: 10px;
+          border-radius: 7px;
+          padding: 0.5em 1.2em;
+        }
       }
     }
 
     &__details {
       display: flex;
       flex-direction: column;
+      margin-bottom: 0.7em;
+
+      @media (max-width: $tablet) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+      }
 
       &__host {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: flex-end;
         align-items: center;
 
         & img {
           width: $size-host-picture;
           height: $size-host-picture;
           border-radius: 50%;
+          @media (max-width: $tablet) {
+            width: $size-host-picture-tablet;
+            height: $size-host-picture-tablet;
+          }
+          @media (max-width: $mobil) {
+            width: $size-host-picture-mobil;
+            height: $size-host-picture-mobil;
+          }
         }
 
         & span {
           font-size: 18px;
-          padding: 1em 1em 1em 0;
+          padding-right: 1em;
+          text-align: end;
+          @media (max-width: $mobil) {
+            font-size: 14px;
+          }
         }
       }
 
@@ -95,6 +142,9 @@ $size-host-picture: 79px;
         display: flex;
         justify-content: space-between;
         margin: 1.3em 0 1.3em 1em;
+        @media (max-width: $mobil) {
+          margin: 0;
+        }
       }
     }
   }
@@ -104,4 +154,7 @@ $size-host-picture: 79px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media (max-width: $big-tablet) {
+    flex-direction: column;
+  }
 }

@@ -5,6 +5,10 @@ body {
   font-weight: 500;
 }
 
+.hidden {
+  display: none;
+}
+
 header {
   display: flex;
   flex-direction: row;

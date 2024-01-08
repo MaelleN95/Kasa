@@ -47,6 +47,16 @@ $height-banner-mobil: 15vh;
     color: white;
     font-size: 48px;
 
+    & .mobile-break {
+      display: none;
+      @media (max-width: $mobil) {
+        display: inline;
+      }
+    }
+
+    @media (max-width: $big-tablet) {
+      font-size: 43px;
+    }
     @media (max-width: $tablet) {
       height: $height-banner-tablet;
       font-size: 40px;

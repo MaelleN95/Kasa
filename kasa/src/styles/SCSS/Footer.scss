@@ -15,9 +15,21 @@ footer {
     height: auto;
     width: 122px;
     margin: 2.9em;
+    @media (max-width: $mobil) {
+      margin: 1em;
+    }
   }
 
   & div {
     font-size: 24px;
+    margin-bottom: 1em;
+    text-align: center;
+    @media (max-width: $big-tablet) {
+      font-size: 18px;
+    }
+    @media (max-width: $mobil) {
+      font-size: 12px;
+      width: 130px;
+    }
   }
 }
