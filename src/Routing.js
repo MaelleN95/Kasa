@@ -7,9 +7,9 @@ import About from "./pages/About";
 import Error404Page from "./pages/Error404Page";
 import Location from "./pages/Location";
 
-function App() {
+function Routing() {
   return (
-    <Router>
+    <Router basename="/OC-Projet6">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -20,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default Routing;
