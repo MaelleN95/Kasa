@@ -11,9 +11,13 @@ function Collapse(props) {
 
   const path = window.location.pathname;
 
+  const basename = "/OC-Projet6";
+
   return (
     <div
-      className={path === "/about" ? "collapse collapse__about" : "collapse"}
+      className={
+        path === `${basename}/about` ? "collapse collapse__about" : "collapse"
+      }
     >
       <div
         className={
