@@ -92,21 +92,11 @@ $px-arrow-mobil: 20px;
       max-height: 0em;
       padding: 0em 1.3em;
       transition: max-height 0.3s, padding 0.3s;
-
-      // height: 0;
-      // transform-origin: 50% 0;
-      // transform: scaleY(0);
-      // transition: transform linear 0.3s, height linear 0.3s;
     }
     &--open {
       padding: 1.7em 1.3em;
       max-height: 15em;
       transition: max-height 0.3s, padding 0.3s;
-
-      // height: auto;
-      // transform-origin: 50% 0;
-      // transform: scaleY(1);
-      // transition: transform linear 0.3s, height linear 0.3s;
     }
   }
   & ul {

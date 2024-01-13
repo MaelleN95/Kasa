@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../styles/CSS/Card.css";
+import "../styles/SCSS/Card.scss";
 
 // Récupération des locations depuis le fichier JSON
 const locations = require("../datas/logements.json");

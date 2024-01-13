@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import "../styles/CSS/Carrousel.css";
+import "../styles/SCSS/Carrousel.scss";
 import arrow from "../assets/arrow.png";
 
 // Récupération des locations depuis le fichier JSON

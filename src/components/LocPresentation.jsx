@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import Collapse from "./Collapse";
 import Carrousel from "./Carrousel";
-import "../styles/CSS/LocPresentation.css";
+import "../styles/SCSS/LocPresentation.scss";
 
 //importation FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

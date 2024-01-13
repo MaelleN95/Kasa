@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 
-import "../styles/CSS/Banner.css";
+import "../styles/SCSS/Banner.scss";
 
 function Banner() {
   let location = useLocation();
