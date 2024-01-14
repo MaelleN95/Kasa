@@ -31,8 +31,8 @@ function Collapse(props) {
           alt="arrow"
           className={
             open
-              ? "collapse__close__arrow collapse__close__arrow--close"
-              : "collapse__close__arrow collapse__close__arrow--open"
+              ? "collapse__close__arrow collapse__close__arrow--open"
+              : "collapse__close__arrow collapse__close__arrow--close"
           }
         />
       </div>
