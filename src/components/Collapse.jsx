@@ -11,7 +11,7 @@ function Collapse(props) {
 
   const path = window.location.pathname;
 
-  const basename = "/OC-Projet6";
+  const basename = "/Kasa";
 
   return (
     <div

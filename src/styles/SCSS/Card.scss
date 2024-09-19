@@ -1,4 +1,4 @@
-@import "./index.scss";
+@import './index.scss';
 
 @mixin card-size-big-desktop {
   width: 340px;
@@ -52,6 +52,10 @@
     @include card-size-big-tablet;
     margin: 0.8em;
   }
+  @media (max-width: 1224px) {
+    width: 33.5vw;
+    height: 300px;
+  }
   @media (max-width: $tablet) {
     @include card-size-tablet;
   }
@@ -64,6 +68,10 @@
     @include card-size-big-desktop;
     @media (max-width: $desktop) {
       @include card-size-big-tablet;
+    }
+    @media (max-width: 1224px) {
+      width: 35vw;
+      height: 300px;
     }
     @media (max-width: $tablet) {
       @include card-size-tablet;
@@ -105,6 +113,10 @@
 
     @media (max-width: $desktop) {
       @include card-size-big-tablet;
+    }
+    @media (max-width: 1224px) {
+      width: 35vw;
+      height: 300px;
     }
     @media (max-width: $tablet) {
       @include card-size-tablet;

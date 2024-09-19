@@ -29,6 +29,23 @@ header img {
     width: 145px;
   }
 }
+@media (max-width: 719px) {
+  header img {
+    width: 100px;
+  }
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 300px) {
+  header nav {
+    flex-direction: column;
+    align-items: end;
+  }
+}
 header nav a {
   margin-left: 2.5em;
   font-size: 24px;
@@ -46,6 +63,12 @@ header nav a.link-active {
 @media (max-width: 719px) {
   header nav a {
     font-size: 12px;
+  }
+}
+@media (max-width: 300px) {
+  header nav a {
+    margin-left: 1em;
+    margin-bottom: 0.5em;
   }
 }
 

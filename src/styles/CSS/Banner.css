@@ -69,6 +69,11 @@ body {
     width: 220px;
   }
 }
+@media (max-width: 300px) {
+  .banner__slogan {
+    width: auto;
+  }
+}
 
 .homeBanner {
   background: url("../../assets/homeBanner.png");

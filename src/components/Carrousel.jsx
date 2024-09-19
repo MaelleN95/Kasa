@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { useParams } from "react-router-dom";
-import "../styles/SCSS/Carrousel.scss";
-import arrow from "../assets/arrow.png";
+import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
+import '../styles/SCSS/Carrousel.scss';
+import arrow from '../assets/arrow.png';
 
 // Récupération des locations depuis le fichier JSON
-const locations = require("../datas/logements.json");
+const locations = require('../datas/logements.json');
 
 function Carrousel() {
   // Récupération de l'id dans l'url
@@ -41,7 +41,7 @@ function Carrousel() {
         src={arrow}
         alt="arrow"
         className={
-          total === 1 ? "hidden" : "carrousel__arrow carrousel__arrow--left"
+          total === 1 ? 'hidden' : 'carrousel__arrow carrousel__arrow--left'
         }
         onClick={() => prevPic()}
       />
@@ -54,11 +54,11 @@ function Carrousel() {
         src={arrow}
         alt="arrow"
         className={
-          total === 1 ? "hidden" : "carrousel__arrow carrousel__arrow--right"
+          total === 1 ? 'hidden' : 'carrousel__arrow carrousel__arrow--right'
         }
         onClick={() => nextPic()}
       />
-      <div className={total === 1 ? "hidden" : "carrousel__count"}>
+      <div className={total === 1 ? 'hidden' : 'carrousel__count'}>
         {id + 1}/{total}
       </div>
     </div>

@@ -47,6 +47,12 @@ body {
     margin: 0.8em;
   }
 }
+@media (max-width: 1224px) {
+  .location-card {
+    width: 33.5vw;
+    height: 300px;
+  }
+}
 @media (max-width: 917px) {
   .location-card {
     width: 42vw;
@@ -72,6 +78,12 @@ body {
     width: 300px;
     height: 300px;
     border-radius: 10px;
+  }
+}
+@media (max-width: 1224px) {
+  .location-card__cover {
+    width: 35vw;
+    height: 300px;
   }
 }
 @media (max-width: 917px) {
@@ -118,6 +130,12 @@ body {
     width: 300px;
     height: 300px;
     border-radius: 10px;
+  }
+}
+@media (max-width: 1224px) {
+  .location-card__gradient-effect {
+    width: 35vw;
+    height: 300px;
   }
 }
 @media (max-width: 917px) {
