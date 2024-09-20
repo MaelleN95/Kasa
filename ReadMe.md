@@ -1,5 +1,7 @@
 # Kasa - Développement d'une application web avec React
 
+![banniere-kasa](https://github.com/user-attachments/assets/7e9e86ff-6333-47b1-956a-9275ad9080d1)
+
 ## Sommaire
 
 * [Description](#description)
