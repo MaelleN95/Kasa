@@ -76,13 +76,13 @@ body {
 }
 
 .homeBanner {
-  background: url("../../assets/homeBanner.png");
+  background: url("../../assets/homeBanner.jpg");
   background-position: 40%;
   background-size: cover;
 }
 
 .aboutBanner {
-  background: url("../../assets/aboutBanner.png");
+  background: url("../../assets/aboutBanner.jpg");
   background-position: 40%;
   background-size: cover;
 }
